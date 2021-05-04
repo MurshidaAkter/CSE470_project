@@ -34,7 +34,6 @@ def print_movie_info(movie):
 def print_d_info(movie):
     print("Here is information about requested Director's movie")
     print(f'Title: {movie["title"]},')
-   # print(f'Director: {movie["director"]},')
     print(f'Year: {movie["year"]},')
     print(f'Genre: {movie["genre"]}.')
 
@@ -43,7 +42,6 @@ def print_g_info(movie):
     print(f'Title: {movie["title"]},')
     print(f'Director: {movie["director"]},')
     print(f'Year: {movie["year"]},')
-   # print(f'Genre: {movie["genre"]}.')
 
 
 
@@ -52,8 +50,8 @@ def find_title():
     for movie in movies:
         if movie['title'] == search_title:
             print_movie_info(movie)
-       # elif movie['title'] != search_title:
-          #  print('Sorry! Requested title was not found in the collection.')
+        elif movie['title'] != search_title:
+            print('Sorry! Requested title was not found in the collection.')
 
 
 def find_director():
@@ -61,15 +59,15 @@ def find_director():
     for movie in movies:
         if movie['director'] == search_director:
             print_d_info(movie)
-        #elif movie['director'] != search_director:
-         #   print('Sorry! No movie information in the collection of this director.')
+        elif movie['director'] != search_director:
+            print('Sorry! No movie information in the collection of this director.')
 
 def find_genre():
     search_genre = input('What type of movie you are looking for: ')
     for movie in movies:
         if movie['genre'] == search_genre:
             print_g_info(movie)
-       # elif movie['genre'] != search_genre:
-           # print('Sorry! No movie of this genre in the collection.')
+        elif movie['genre'] != search_genre:
+            print('Sorry! No movie of this genre in the collection.')
 
 
