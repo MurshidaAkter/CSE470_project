@@ -1,4 +1,4 @@
-from infoController import add_movie,list_movies,find_title,find_director,find_genre
+from controller.infoController import add_movie,list_movies,find_title,find_director,find_genre
 
 #movies = []
 START = "\nEnter 'a' to add a movie, \n 'l' to see your movies, \n 'f' to find a movie by title, \n 'd' to find a movie by director,\n 'g' to find a movie by genre, \n or 'q' to quit: "
